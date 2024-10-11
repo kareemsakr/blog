@@ -1,0 +1,8 @@
+---
+title: My Blog
+layout: 'base.njk'
+---
+
+{% for post in collections.post | reverse %}
+    {% include 'post_snippet.njk'%}
+{% endfor %}

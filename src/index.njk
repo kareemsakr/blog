@@ -1,0 +1,8 @@
+---
+title: My Homepage
+layout: 'base.njk'
+---
+
+{% for post in collections.featured | reverse %}
+    {% include 'post_snippet.njk'%}
+{% endfor %}
